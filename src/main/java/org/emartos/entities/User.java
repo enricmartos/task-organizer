@@ -2,6 +2,7 @@ package org.emartos.entities;
 
 import javax.persistence.*;
 import javax.validation.constraints.Email;
+import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
@@ -10,13 +11,14 @@ import java.util.List;
 @Entity
 public class User {
     @Id //Id as a primary key column
-    @GeneratedValue //Hibernate will create this value
-    private Long id;
-
+    //two options to show validation error messages
+    //->(message="") (hardcoded) or set these messages in messages.properties file
     @Email
+    @NotEmpty
+    @Column(unique = true)
     private String email;
 
-    @NotNull
+    @NotEmpty
     private String name;
     @Size(min = 4)
     private String password;
@@ -29,10 +31,10 @@ public class User {
     //One user can have multiple rols, and one role can be assigned to multiple users
     //User owner of the relationship, because contains the join table annotation
     @ManyToMany(cascade = CascadeType.ALL)
-    @JoinTable(name="user_roles", joinColumns = {
-            @JoinColumn(name="user_id", referencedColumnName = "id")
+    @JoinTable(name="USER_ROLES", joinColumns = {
+            @JoinColumn(name="USER_EMAIL", referencedColumnName = "email")
     }, inverseJoinColumns = {
-            @JoinColumn(name="role_id", referencedColumnName = "id")
+            @JoinColumn(name="ROLE_NAME", referencedColumnName = "name")
     })
     private List<Role> roles;
 
@@ -44,10 +46,6 @@ public class User {
 
     public User () {
 
-    }
-
-    public Long getId() {
-        return id;
     }
 
     public String getEmail() {

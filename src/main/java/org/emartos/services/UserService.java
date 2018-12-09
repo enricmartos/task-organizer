@@ -47,18 +47,27 @@ public class UserService {
         userRepository.save(user);
     }
 
-    public User findOne(Long id) {
 
-        Optional<User> optionalUser = userRepository.findById(id);
-        User user = optionalUser.get();
-
-        return user;
-    }
-
-    public User findOneByEmail(String email) {
+    public User findOne(String email) {
 
         User user = userRepository.findByEmail(email);
 
         return user;
+    }
+
+    public boolean isUserPresent(String email) {
+        User user = userRepository.findByEmail(email);
+        if (user!=null)
+            return true;
+        return false;
+    }
+
+    public List<User> findAll() {
+        return userRepository.findAll();
+    }
+
+    public List<User> findByName(String name) {
+        //this will match all the names that contain string name (sql query notation)
+        return  userRepository.findByNameLike("%"+name+"%");
     }
 }

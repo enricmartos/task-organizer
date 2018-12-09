@@ -10,10 +10,6 @@ import java.util.List;
 @Entity
 public class Role {
     @Id
-    @GeneratedValue
-    private Long id;
-
-    @NotNull
     private String name;
 
     @ManyToMany(mappedBy = "roles")
@@ -28,10 +24,6 @@ public class Role {
 
     public Role(String name) {
         this.name = name;
-    }
-
-    public Long getId() {
-        return id;
     }
 
     public String getName() {

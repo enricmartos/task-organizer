@@ -2,28 +2,51 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f06367a7-00b1-44bd-868b-206a9d95bf84" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/emartos/TaskOrganizerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/emartos/entities/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/emartos/entities/Task.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/emartos/entities/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/emartos/repositories/RoleRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/emartos/repositories/TaskRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/emartos/repositories/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/emartos/services/TaskService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/emartos/services/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/emartos/TaskOrganizerApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileContent/annotation-processors.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileContent/annotation-processors.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/emartos/entities/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/emartos/entities/Role.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/emartos/entities/Task.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/emartos/entities/Task.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/emartos/entities/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/emartos/entities/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/emartos/repositories/RoleRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/emartos/repositories/RoleRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/emartos/repositories/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/emartos/repositories/UserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/emartos/services/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/emartos/services/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/emartos/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/emartos/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/emartos/controllers/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/emartos/controllers/IndexController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/emartos/controllers/ProfileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/emartos/controllers/ProfileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/emartos/controllers/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/emartos/controllers/RegisterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/emartos/controllers/TaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/emartos/controllers/TaskController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/emartos/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/emartos/controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/emartos/entities/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/emartos/entities/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/emartos/entities/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/emartos/entities/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/emartos/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/emartos/entities/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/emartos/repositories/RoleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/emartos/repositories/RoleRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/emartos/repositories/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/emartos/repositories/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/emartos/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/emartos/services/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/messages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/messages.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/main_layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/main_layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/views/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/views/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/views/loginForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/views/loginForm.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/views/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/views/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/views/registerForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/views/registerForm.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/views/success.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/views/success.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/views/taskForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/views/taskForm.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/emartos/TaskOrganizerApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/emartos/TaskOrganizerApplicationTests.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -73,6 +96,19 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="task-organizer" type="f1a62948:ProjectNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+                <item name="test" type="396b929e:GradleViewContributor$SourceSetNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="task-organizer" type="f1a62948:ProjectNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+                <item name="test" type="396b929e:GradleViewContributor$SourceSetNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="task-organizer" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
               <path>
@@ -80,6 +116,18 @@
                 <item name="task-organizer" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="application" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="task-organizer" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="task-organizer" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build setup" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -92,119 +140,61 @@
     <session id="-1646877568">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.26" value="1" />
+          <entry key="project.open.time.28" value="1" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="gradle" value="3" />
-          <entry key="java" value="10" />
-          <entry key="properties" value="1" />
+          <entry key="css" value="3" />
+          <entry key="gradle" value="5" />
+          <entry key="html" value="33" />
+          <entry key="java" value="47" />
+          <entry key="properties" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Groovy" value="3" />
-          <entry key="JAVA" value="10" />
-          <entry key="Properties" value="1" />
+          <entry key="CSS" value="3" />
+          <entry key="Groovy" value="5" />
+          <entry key="HTML" value="33" />
+          <entry key="JAVA" value="47" />
+          <entry key="Properties" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="gradle" value="14" />
-          <entry key="java" value="2867" />
-          <entry key="properties" value="115" />
+          <entry key="css" value="108" />
+          <entry key="gradle" value="148" />
+          <entry key="html" value="2309" />
+          <entry key="java" value="6342" />
+          <entry key="properties" value="452" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Groovy" value="14" />
-          <entry key="JAVA" value="2867" />
-          <entry key="Properties" value="115" />
+          <entry key="CSS" value="108" />
+          <entry key="Groovy" value="148" />
+          <entry key="HTML" value="2309" />
+          <entry key="JAVA" value="6342" />
+          <entry key="Properties" value="452" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/main_layout.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="56" selection-start-line="1" selection-start-column="56" selection-end-line="1" selection-end-column="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/emartos/entities/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-77">
-              <caret line="25" column="41" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#994#995#0" expanded="true" />
-                <element signature="e#1019#1020#0" expanded="true" />
-                <element signature="e#245#246#0" expanded="true" />
-                <element signature="e#273#274#0" expanded="true" />
-                <element signature="e#315#316#0" expanded="true" />
-                <element signature="e#349#350#0" expanded="true" />
-                <element signature="e#380#381#0" expanded="true" />
-                <element signature="e#407#408#0" expanded="true" />
-                <element signature="e#447#448#0" expanded="true" />
-                <element signature="e#479#480#0" expanded="true" />
-                <element signature="e#514#515#0" expanded="true" />
-                <element signature="e#545#546#0" expanded="true" />
-                <element signature="e#593#594#0" expanded="true" />
-                <element signature="e#633#634#0" expanded="true" />
-                <element signature="e#669#670#0" expanded="true" />
-                <element signature="e#697#698#0" expanded="true" />
-                <element signature="e#743#744#0" expanded="true" />
-                <element signature="e#777#778#0" expanded="true" />
-                <element signature="e#813#814#0" expanded="true" />
-                <element signature="e#841#842#0" expanded="true" />
-                <element signature="e#887#888#0" expanded="true" />
-                <element signature="e#921#922#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/emartos/services/UserService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="57" column="30" selection-start-line="57" selection-start-column="16" selection-end-line="57" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/emartos/services/TaskService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="22" column="47" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#554#555#0" expanded="true" />
-                <element signature="e#590#591#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/org/emartos/TaskOrganizerApplicationTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="34" selection-start-line="34" selection-end-line="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="238">
+              <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -212,77 +202,26 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+            <state relative-caret-position="199">
+              <caret line="36" column="84" selection-start-line="36" selection-start-column="84" selection-end-line="36" selection-end-column="84" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/emartos/entities/Task.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/org/emartos/TaskOrganizerApplicationTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="24" column="33" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#237#238#0" expanded="true" />
-                <element signature="e#262#263#0" expanded="true" />
-                <element signature="e#296#297#0" expanded="true" />
-                <element signature="e#324#325#0" expanded="true" />
-                <element signature="e#355#356#0" expanded="true" />
-                <element signature="e#382#383#0" expanded="true" />
-                <element signature="e#422#423#0" expanded="true" />
-                <element signature="e#454#455#0" expanded="true" />
-                <element signature="e#490#491#0" expanded="true" />
-                <element signature="e#522#523#0" expanded="true" />
-                <element signature="e#572#573#0" expanded="true" />
-                <element signature="e#614#615#0" expanded="true" />
-                <element signature="e#649#650#0" expanded="true" />
-                <element signature="e#680#681#0" expanded="true" />
-                <element signature="e#728#729#0" expanded="true" />
-                <element signature="e#768#769#0" expanded="true" />
-                <element signature="e#806#807#0" expanded="true" />
-                <element signature="e#840#841#0" expanded="true" />
-                <element signature="e#894#895#0" expanded="true" />
-                <element signature="e#940#941#0" expanded="true" />
-                <element signature="e#969#970#0" expanded="true" />
-                <element signature="e#996#997#0" expanded="true" />
-                <element signature="e#1034#1035#0" expanded="true" />
-                <element signature="e#1066#1067#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="372">
+              <caret line="64" column="40" selection-start-line="64" selection-start-column="40" selection-end-line="64" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/emartos/repositories/UserRepository.java">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/header.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/emartos/repositories/TaskRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/emartos/repositories/RoleRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="17">
+              <caret line="1" column="59" selection-start-line="1" selection-start-column="59" selection-end-line="1" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -292,6 +231,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Thymeleaf" />
+        <option value="HTML File" />
         <option value="Class" />
       </list>
     </option>
@@ -299,7 +240,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>int</find>
-      <find>int</find>
+      <find>org.springframework:spring-jdbc</find>
+      <find>user_id</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -308,7 +250,7 @@
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
       <map>
-        <entry key="$PROJECT_DIR$" value="C:\Users\enrik\.gradle\wrapper\dists\gradle-4.8-bin\divx0s2uj4thofgytb7gf9fsi\gradle-4.8" />
+        <entry key="$PROJECT_DIR$" value="C:\Users\enrik\.gradle\wrapper\dists\gradle-4.8-all\41c9mvq2w0645xx6nsenaerjl\gradle-4.8" />
       </map>
     </option>
     <option name="myGradleVersions">
@@ -535,9 +477,9 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="6175455384869" />
+        <entry key="$PROJECT_DIR$" value="6175970360730" />
         <entry key="$PROJECT_DIR$/.gradle" value="0" />
-        <entry key="$PROJECT_DIR$/build.gradle" value="414842693" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="2591374689" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="2585518924" />
         <entry key="$PROJECT_DIR$/settings.gradle" value="3711748571" />
       </map>
@@ -741,18 +683,45 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/src/main/java/org/emartos/entities/Role.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/emartos/repositories/RoleRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/emartos/TaskOrganizerApplication.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/org/emartos/entities/Task.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/emartos/entities/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/emartos/services/TaskService.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/emartos/repositories/TaskRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/emartos/repositories/UserRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/fragments.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/t.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/fragments/fragments.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/cheese/index.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/footer.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/views/index.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/views/test.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/test.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/css/styles.css" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/index.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/views/registerFormTest.html" />
+        <option value="$PROJECT_DIR$/src/main/java/org/emartos/controllers/RegisterController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/views/success.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/views/registerForm.html" />
+        <option value="$PROJECT_DIR$/src/main/java/org/emartos/controllers/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/views/list.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/messages.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/views/taskForm.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/views/profile.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/fragments/footer.html" />
+        <option value="$PROJECT_DIR$/src/main/java/org/emartos/controllers/IndexController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/views/loginForm.html" />
+        <option value="$PROJECT_DIR$/src/main/java/org/emartos/entities/Role.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/emartos/services/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/emartos/controllers/ProfileController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/emartos/controllers/TaskController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/emartos/entities/Task.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/emartos/entities/User.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/org/emartos/config/SecurityConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/emartos/repositories/UserRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/emartos/repositories/RoleRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/fragments/main_layout.html" />
         <option value="$PROJECT_DIR$/src/test/java/org/emartos/TaskOrganizerApplicationTests.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/fragments/header.html" />
+        <option value="$PROJECT_DIR$/build.gradle" />
       </list>
     </option>
   </component>
@@ -809,6 +778,24 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="emartos" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="task-organizer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="task-organizer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="emartos" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="task-organizer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="task-organizer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="emartos" type="462c0819:PsiDirectoryNode" />
               <item name="entities" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -840,6 +827,40 @@
               <item name="task-organizer" type="b2602c69:ProjectViewProjectNode" />
               <item name="task-organizer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="task-organizer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="task-organizer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="task-organizer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="task-organizer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="fragments" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="task-organizer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="task-organizer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="task-organizer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="task-organizer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
@@ -861,14 +882,27 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543876355739" />
-    <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/cheese-mvc" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544380956595" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.general" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\enrik\Documents\task-organizer\src\main\resources\templates\views" />
+      <recent name="C:\Users\enrik\Documents\task-organizer\src\main\resources\static\css" />
+      <recent name="C:\Users\enrik\Documents\task-organizer\src\main\resources\static" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\enrik\Documents\task-organizer\src\main\resources\templates\fragments" />
+      <recent name="C:\Users\enrik\Documents\task-organizer\src\main\resources\templates" />
+      <recent name="C:\Users\enrik\Documents\task-organizer\src\main\resources\templates\views" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -882,7 +916,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TaskOrganizerApplicationTests">
+  <component name="RunManager" selected="Gradle.task-organizer [build]">
+    <configuration name="TaskOrganizerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.emartos.TaskOrganizerApplication" />
+      <module name="task-organizer_main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.emartos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="task-organizer [bootRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -895,6 +942,42 @@
         <option name="taskNames">
           <list>
             <option value="bootRun" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="task-organizer [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="task-organizer [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -918,11 +1001,17 @@
     <list>
       <item itemvalue="Gradle.task-organizer [bootRun]" />
       <item itemvalue="JUnit.TaskOrganizerApplicationTests" />
+      <item itemvalue="Application.TaskOrganizerApplication" />
+      <item itemvalue="Gradle.task-organizer [clean]" />
+      <item itemvalue="Gradle.task-organizer [build]" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TaskOrganizerApplicationTests" />
         <item itemvalue="Gradle.task-organizer [bootRun]" />
+        <item itemvalue="Gradle.task-organizer [build]" />
+        <item itemvalue="Gradle.task-organizer [clean]" />
+        <item itemvalue="Application.TaskOrganizerApplication" />
+        <item itemvalue="JUnit.TaskOrganizerApplicationTests" />
       </list>
     </recent_temporary>
   </component>
@@ -940,9 +1029,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TaskOrganizerApplicationTests - 2018.12.03 at 22h 54m 33s.xml">
-      <configuration name="TaskOrganizerApplicationTests" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TaskOrganizerApplicationTests - 2018.12.03 at 22h 56m 06s.xml">
       <configuration name="TaskOrganizerApplicationTests" configurationId="JUnit" />
     </history-entry>
@@ -970,173 +1056,199 @@
     <history-entry file="TaskOrganizerApplicationTests - 2018.12.03 at 23h 14m 43s.xml">
       <configuration name="TaskOrganizerApplicationTests" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TaskOrganizerApplicationTests - 2018.12.03 at 23h 32m 54s.xml">
+      <configuration name="TaskOrganizerApplicationTests" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24130106" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3192133" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Build" weight="0.3295082" />
-      <window_info anchor="bottom" id="Messages" weight="0.3295082" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3295082" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3295082" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2704918" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Gradle" weight="0.23903178" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Maven Projects" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Build" order="10" weight="0.3295082" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3295082" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Gradle" order="5" visible="true" weight="0.24281392" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
     </layout>
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.css" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/emartos/repositories/RoleRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/templates/header.html" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/templates/fragments.html" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/materia/bootstrap.css" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/t.html" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/test2.html" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/test.html" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="1" column="56" selection-start-line="1" selection-start-column="56" selection-end-line="1" selection-end-column="56" />
+          <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/emartos/entities/Role.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/materia/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/views/index.html" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/views/success.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="57" selection-start-line="11" selection-start-column="57" selection-end-line="11" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/views/registerForm.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
-          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+          <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/views/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="30" column="71" selection-start-line="30" selection-start-column="71" selection-end-line="30" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/messages.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="46" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/views/taskForm.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/views/profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="27" column="55" selection-start-line="27" selection-start-column="55" selection-end-line="27" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/views/loginForm.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/emartos/services/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-68">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+          <folding>
+            <element signature="e#2221#2222#0" expanded="true" />
+            <element signature="e#2268#2269#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/emartos/controllers/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="17" column="54" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#292#293#0" expanded="true" />
-            <element signature="e#324#325#0" expanded="true" />
-            <element signature="e#546#547#0" expanded="true" />
-            <element signature="e#571#572#0" expanded="true" />
-            <element signature="e#160#161#0" expanded="true" />
-            <element signature="e#187#188#0" expanded="true" />
-            <element signature="e#227#228#0" expanded="true" />
-            <element signature="e#259#260#0" expanded="true" />
-            <element signature="e#295#296#0" expanded="true" />
-            <element signature="e#323#324#0" expanded="true" />
-            <element signature="e#369#370#0" expanded="true" />
-            <element signature="e#403#404#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/emartos/controllers/IndexController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#243#244#0" expanded="true" />
+            <element signature="e#273#274#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/emartos/controllers/ProfileController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/emartos/controllers/TaskController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="37" column="53" selection-start-line="37" selection-start-column="53" selection-end-line="37" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/emartos/controllers/RegisterController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="497">
+          <caret line="37" column="29" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/emartos/TaskOrganizerApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="11" selection-start-column="11" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/emartos/repositories/TaskRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/emartos/entities/Task.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="24" column="33" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#237#238#0" expanded="true" />
-            <element signature="e#262#263#0" expanded="true" />
-            <element signature="e#296#297#0" expanded="true" />
-            <element signature="e#324#325#0" expanded="true" />
-            <element signature="e#355#356#0" expanded="true" />
-            <element signature="e#382#383#0" expanded="true" />
-            <element signature="e#422#423#0" expanded="true" />
-            <element signature="e#454#455#0" expanded="true" />
-            <element signature="e#490#491#0" expanded="true" />
-            <element signature="e#522#523#0" expanded="true" />
-            <element signature="e#572#573#0" expanded="true" />
-            <element signature="e#614#615#0" expanded="true" />
-            <element signature="e#649#650#0" expanded="true" />
-            <element signature="e#680#681#0" expanded="true" />
-            <element signature="e#728#729#0" expanded="true" />
-            <element signature="e#768#769#0" expanded="true" />
-            <element signature="e#806#807#0" expanded="true" />
-            <element signature="e#840#841#0" expanded="true" />
-            <element signature="e#894#895#0" expanded="true" />
-            <element signature="e#940#941#0" expanded="true" />
-            <element signature="e#969#970#0" expanded="true" />
-            <element signature="e#996#997#0" expanded="true" />
-            <element signature="e#1034#1035#0" expanded="true" />
-            <element signature="e#1066#1067#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/emartos/entities/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-77">
-          <caret line="25" column="41" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#994#995#0" expanded="true" />
-            <element signature="e#1019#1020#0" expanded="true" />
-            <element signature="e#245#246#0" expanded="true" />
-            <element signature="e#273#274#0" expanded="true" />
-            <element signature="e#315#316#0" expanded="true" />
-            <element signature="e#349#350#0" expanded="true" />
-            <element signature="e#380#381#0" expanded="true" />
-            <element signature="e#407#408#0" expanded="true" />
-            <element signature="e#447#448#0" expanded="true" />
-            <element signature="e#479#480#0" expanded="true" />
-            <element signature="e#514#515#0" expanded="true" />
-            <element signature="e#545#546#0" expanded="true" />
-            <element signature="e#593#594#0" expanded="true" />
-            <element signature="e#633#634#0" expanded="true" />
-            <element signature="e#669#670#0" expanded="true" />
-            <element signature="e#697#698#0" expanded="true" />
-            <element signature="e#743#744#0" expanded="true" />
-            <element signature="e#777#778#0" expanded="true" />
-            <element signature="e#813#814#0" expanded="true" />
-            <element signature="e#841#842#0" expanded="true" />
-            <element signature="e#887#888#0" expanded="true" />
-            <element signature="e#921#922#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/emartos/repositories/UserRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#325#326#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1145,18 +1257,65 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="22" column="47" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/emartos/entities/Task.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-136">
+          <caret line="6" column="7" lean-forward="true" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/emartos/entities/Role.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/emartos/entities/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="36" column="39" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/emartos/repositories/UserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="9" column="35" lean-forward="true" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/emartos/repositories/RoleRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#554#555#0" expanded="true" />
-            <element signature="e#590#591#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/emartos/services/UserService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/emartos/repositories/TaskRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="57" column="30" selection-start-line="57" selection-start-column="16" selection-end-line="57" selection-end-column="30" />
+        <state relative-caret-position="119">
+          <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/emartos/config/SecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="30" column="110" selection-start-line="30" selection-start-column="110" selection-end-line="30" selection-end-column="110" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1165,18 +1324,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/org/emartos/TaskOrganizerApplicationTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="372">
+          <caret line="64" column="40" selection-start-line="64" selection-start-column="40" selection-end-line="64" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/main_layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="59" selection-start-line="1" selection-start-column="59" selection-end-line="1" selection-end-column="59" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+        <state relative-caret-position="199">
+          <caret line="36" column="84" selection-start-line="36" selection-start-column="84" selection-end-line="36" selection-end-column="84" />
         </state>
       </provider>
     </entry>

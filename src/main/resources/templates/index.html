@@ -1,10 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{fragments/main_layout}" >
 <head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Index Page</title>
 </head>
 <body>
-$END$
+
+<div  layout:fragment="content" class="container mySpace">
+    <div class="jumbotron">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum maiores autem vel doloribus consequuntur harum commodi eos tenetur vitae asperiores!</p>
+
+    </div>
+</div>
 </body>
 </html>

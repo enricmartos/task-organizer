@@ -1,6 +1,7 @@
 package org.emartos.entities;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 
 @Entity
@@ -10,19 +11,20 @@ public class Task {
     @GeneratedValue
     private Long id;
 
-    @NotNull
+    @NotEmpty
     private String date;
 
-    @NotNull
+    @NotEmpty
     private String startTime;
 
-    @NotNull
+    @NotEmpty
     private String stopTime;
 
-    @NotNull
+    @NotEmpty
+    @Column(length=1000)
     private String description;
     @ManyToOne
-    @JoinColumn(name = "user_id")
+    @JoinColumn(name = "user_email")
     //"USER_EMAIL value of the PK /id of User entity
     private User user;
 
