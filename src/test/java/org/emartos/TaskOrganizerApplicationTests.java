@@ -41,7 +41,7 @@ public class TaskOrganizerApplicationTests {
         {
             User newUser = new User("testAdmin@mail.com",
                     "testAdmin", "123456");
-            userService.createUser(newUser);
+            userService.createAdmin(newUser);
         }
 
             Task userTask = new Task("03/01/2018", "00:11",

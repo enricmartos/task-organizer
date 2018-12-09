@@ -29,7 +29,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .usersByUsernameQuery("select email as principal, password as credentials, true from user where " +
                         "email=?").
                 authoritiesByUsernameQuery("select user_email as principal, role_name as role from user_roles " +
-                        "where user_email = ?")
+                        "where user_email=?")
                 .passwordEncoder(passwordEncoder()).rolePrefix("ROLE_");
     }
 
@@ -46,9 +46,12 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         //After the user is correctly logged in, he will se the profile page (post request of the log in form)
         //After the user is correctly logged out, he will se the log in page (get request)
         http.authorizeRequests().antMatchers("/register", "/", "/about", "/login",
-                "/css/**", "/webjars/**").permitAll().anyRequest().authenticated().and().
-                formLogin().loginPage("/login").permitAll().defaultSuccessUrl("/profile").and().
-                logout().logoutSuccessUrl("/login");
+                "/css/**", "/webjars/**").permitAll()
+                //.anyRequest().authenticated()
+                .antMatchers("/profile").hasAnyRole("USER,ADMIN")
+                .antMatchers("/users","/addTask").hasRole("ADMIN")
+                .and().formLogin().loginPage("/login").permitAll().defaultSuccessUrl("/profile")
+                .and().logout().logoutSuccessUrl("/login");
     }
 
 
