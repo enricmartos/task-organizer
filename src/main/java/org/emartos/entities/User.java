@@ -13,6 +13,9 @@ public class User {
     @Id //Id as a primary key column
     //two options to show validation error messages
     //->(message="") (hardcoded) or set these messages in messages.properties file
+    @GeneratedValue
+    private Long id;
+
     @Email
     @NotEmpty
     @Column(unique = true)
@@ -28,15 +31,7 @@ public class User {
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
     private List<Task> tasks;
 
-    //One user can have multiple rols, and one role can be assigned to multiple users
-    //User owner of the relationship, because contains the join table annotation
-    @ManyToMany(cascade = CascadeType.ALL)
-    @JoinTable(name="USER_ROLES", joinColumns = {
-            @JoinColumn(name="USER_EMAIL", referencedColumnName = "email")
-    }, inverseJoinColumns = {
-            @JoinColumn(name="ROLE_NAME", referencedColumnName = "name")
-    })
-    private List<Role> roles;
+    private String role;
 
     public User(String email, String name, String password) {
         this.email = email;
@@ -46,6 +41,10 @@ public class User {
 
     public User () {
 
+    }
+
+    public Long getId() {
+        return id;
     }
 
     public String getEmail() {
@@ -80,11 +79,11 @@ public class User {
         this.tasks = tasks;
     }
 
-    public List<Role> getRoles() {
-        return roles;
+    public String getRole() {
+        return role;
     }
 
-    public void setRoles(List<Role> roles) {
-        this.roles = roles;
+    public void setRole(String role) {
+        this.role = role;
     }
 }

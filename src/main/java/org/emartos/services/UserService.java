@@ -1,14 +1,11 @@
 package org.emartos.services;
 
-import org.emartos.entities.Role;
 import org.emartos.entities.User;
 import org.emartos.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.crypto.bcrypt.BCrypt;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -24,12 +21,7 @@ public class UserService {
         BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
         user.setPassword(encoder.encode(user.getPassword()));
         //Create and set role
-        Role userRole = new Role("USER");
-        List<Role> roles = new ArrayList<>();
-        roles.add(userRole);
-        user.setRoles(roles);
-        //Due to Cascade ALL in roles field in user class
-        //this role will be persisting when saving the user
+        user.setRole("USER");
         userRepository.save(user);
     }
 
@@ -38,17 +30,20 @@ public class UserService {
         BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
         user.setPassword(encoder.encode(user.getPassword()));
         //Create and set role
-        Role userRole = new Role("ADMIN");
-        List<Role> roles = new ArrayList<>();
-        roles.add(userRole);
-        user.setRoles(roles);
-        //Due to Cascade ALL in roles field in user class
-        //this role will be persisting when saving the user
+        user.setRole("ADMIN");
         userRepository.save(user);
     }
 
 
-    public User findOne(String email) {
+    public User findOne(Long id) {
+
+        Optional<User> optUser = userRepository.findById(id);
+        User user = optUser.get();
+
+        return user;
+    }
+
+    public User findByEmail(String email) {
 
         User user = userRepository.findByEmail(email);
 

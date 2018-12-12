@@ -28,8 +28,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 //spring sec. requires the true variable for the user to be auth.
                 .usersByUsernameQuery("select email as principal, password as credentials, true from user where " +
                         "email=?").
-                authoritiesByUsernameQuery("select user_email as principal, role_name as role from user_roles " +
-                        "where user_email=?")
+                authoritiesByUsernameQuery("select email as principal, role as role from user " +
+                        "where email=?")
                 .passwordEncoder(passwordEncoder()).rolePrefix("ROLE_");
     }
 

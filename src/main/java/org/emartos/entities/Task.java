@@ -24,7 +24,7 @@ public class Task {
     @Column(length=1000)
     private String description;
     @ManyToOne
-    @JoinColumn(name = "user_email")
+    @JoinColumn(name = "user_id")
     //"USER_EMAIL value of the PK /id of User entity
     private User user;
 
