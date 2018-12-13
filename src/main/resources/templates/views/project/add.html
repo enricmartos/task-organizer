@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{fragments/main_layout}" >
+<head>
+    <title>Project Page</title>
+</head>
+<body>
+
+<div  layout:fragment="content" class="container mySpace">
+    <div class="card">
+        <div class="card card-body">
+
+            <form th:action="@{/addProject}" th:object="${project}" method="post">
+
+                <div class="form-group">
+                    <label for="name" class="form-control-label">Name</label>
+                    <textarea class="form-control" th:field="*{name}" id="name"></textarea>
+                    <div class="text text-danger" th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></div>
+                </div>
+
+                <input type="submit" value="Submit" class="btn btn-primary"/>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

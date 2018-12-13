@@ -36,17 +36,13 @@ public class UserService {
 
 
     public User findOne(Long id) {
-
         Optional<User> optUser = userRepository.findById(id);
         User user = optUser.get();
-
         return user;
     }
 
     public User findByEmail(String email) {
-
         User user = userRepository.findByEmail(email);
-
         return user;
     }
 

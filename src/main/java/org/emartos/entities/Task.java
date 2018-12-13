@@ -28,6 +28,9 @@ public class Task {
     //"USER_EMAIL value of the PK /id of User entity
     private User user;
 
+    @ManyToOne
+    private Project project;
+
     public Task(Long id, String date, String startTime, String stopTime, String description, User user) {
         this.id = id;
         this.date = date;
@@ -92,5 +95,13 @@ public class Task {
 
     public void setUser(User user) {
         this.user = user;
+    }
+
+    public Project getProject() {
+        return project;
+    }
+
+    public void setProject(Project project) {
+        this.project = project;
     }
 }

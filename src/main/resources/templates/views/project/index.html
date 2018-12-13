@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{fragments/main_layout}" >
+<head>
+    <title>Project Page</title>
+</head>
+<body>
+
+<div  layout:fragment="content" class="container mySpace">
+    <div class="card">
+        <div class="card card-body">
+            <ul>
+                <li th:each="project : ${projects}">
+                    <a th:text="${project.name}" th:href="@{/project(id=${project.id})}"></a>
+                </li>
+            </ul>
+
+            <a href="/project/add">Add Project</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
