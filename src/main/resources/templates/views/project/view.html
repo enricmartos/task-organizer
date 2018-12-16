@@ -12,7 +12,7 @@
         <div class="card card-body">
             <ul>
                 <li th:each="project : ${projects}">
-                    <a th:text="${project.name}" th:href="'/project/view/' + ${project.id}"></a>
+                    <a th:text="${project.name}" th:href="@{/project(id=${project.id})}"></a>
                 </li>
             </ul>
 

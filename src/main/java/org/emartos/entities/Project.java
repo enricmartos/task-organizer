@@ -19,9 +19,7 @@ public class Project {
     @Size(min=3, max=15)
     private String name;
 
-    @OneToMany
-    //Specifies a foreign key of the cheese table
-    @JoinColumn(name = "project_id")
+    @OneToMany(mappedBy = "project", cascade = CascadeType.ALL)
     private List<Task> tasks = new ArrayList<>();
 
     public Project() {};

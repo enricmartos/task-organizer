@@ -3,7 +3,7 @@
       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
       layout:decorate="~{fragments/main_layout}" >
 <head>
-    <title>Register Form</title>
+    <title>Sign up Form</title>
 </head>
 <body>
 
@@ -14,7 +14,7 @@
         </p>
     </div>
 
-    <form th:action="@{/register}" th:object="${user}" method="post">
+    <form th:action="@{/signup}" th:object="${user}" method="post">
         <div class="form-group">
             <label for="email" class="form-control-label">Email</label>
             <input type="text" class="form-control" th:field="*{email}" id="email"/>

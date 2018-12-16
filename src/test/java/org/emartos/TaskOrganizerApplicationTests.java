@@ -1,5 +1,6 @@
 package org.emartos;
 
+import org.emartos.entities.Project;
 import org.emartos.entities.Task;
 import org.emartos.entities.User;
 import org.emartos.services.TaskService;
@@ -46,6 +47,8 @@ public class TaskOrganizerApplicationTests {
 
             Task userTask = new Task("03/01/2018", "00:11",
                     "11:00", "You need to work today");
+            Project project = new Project("Development");
+            userTask.setProject(project);
             User user = userService.findByEmail("testUser@mail.com");
             taskService.addTask(userTask, user);
     }

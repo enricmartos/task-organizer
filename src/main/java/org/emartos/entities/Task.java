@@ -29,6 +29,7 @@ public class Task {
     private User user;
 
     @ManyToOne
+    @JoinColumn(name = "project_id")
     private Project project;
 
     public Task(Long id, String date, String startTime, String stopTime, String description, User user) {

@@ -8,40 +8,48 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
+import java.util.List;
+import java.util.Optional;
 
 @Controller
+@RequestMapping("project")
 public class ProjectController {
 
     @Autowired
     private ProjectService projectService;
 
-    @GetMapping("/projects")
+    @GetMapping("")
     public String showProjects(Model model) {
         model.addAttribute("projects", projectService.findAll());
         return "views/project/index";
     }
 
-    @GetMapping("/project/add")
+    @GetMapping("add")
     public String projectForm(Model model) {
-        //email of the user that with the task assigned
+
         model.addAttribute("project", new Project());
         return "views/project/add";
     }
 
-    @PostMapping("/addProject")
+    @PostMapping("add")
     public String addProject(@Valid Project project, BindingResult bindingResult, HttpSession session) {
         if (bindingResult.hasErrors()) {
             return "views/project/add";
         }
         projectService.createOne(project);
+        return "redirect:/project";
+    }
 
-        return "redirect:/projects";
+    @RequestMapping(value="view/{projectId}", method = RequestMethod.GET)
+    public String viewProject(Model model, @PathVariable Long projectId) {
 
+        List<Task> tasks = projectService.findTasksById(projectId);
+        model.addAttribute("tasks", tasks);
+
+        return "views/task/index";
     }
 }

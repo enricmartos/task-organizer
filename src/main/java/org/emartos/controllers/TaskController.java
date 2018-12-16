@@ -9,15 +9,15 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
+import java.util.List;
 import java.util.Optional;
 
 @Controller
+@RequestMapping("task")
 public class TaskController {
 
     @Autowired
@@ -28,26 +28,49 @@ public class TaskController {
     @Autowired
     private ProjectService projectService;
 
-    @GetMapping("/addTask")
+    @GetMapping("")
+    public String index(Model model) {
+        model.addAttribute("tasks", taskService.findAll());
+        return "views/task/index";
+    }
+
+    @GetMapping("add")
     public String taskForm(String email, Model model, HttpSession session) {
         //email of the user that with the task assigned
         session.setAttribute("email", email);
         model.addAttribute("task", new Task());
         model.addAttribute("projects", projectService.findAll());
-        return "views/taskForm";
+        model.addAttribute("users", userService.findAll());
+        //return "views/taskForm";
+        return "views/task/add";
     }
 
-    @PostMapping("/addTask")
-    public String addTask(@Valid Task task, BindingResult bindingResult, @RequestParam Long projectId, HttpSession session) {
+    @PostMapping("add")
+    public String addTask(@Valid Task task, BindingResult bindingResult, @RequestParam Long projectId,
+                          @RequestParam Long userId) {
         if (bindingResult.hasErrors()) {
-            return "views/taskForm";
+            return "views/task/add";
         }
         Project project = projectService.findById(projectId);
         task.setProject(project);
-        String email = (String)session.getAttribute("email");
-        taskService.addTask(task, userService.findByEmail(email));
 
-        return "redirect:/users";
+        taskService.addTask(task, userService.findOne(userId));
+
+        //String email = (String)session.getAttribute("email");
+        //taskService.addTask(task, userService.findByEmail(email));
+
+        return "redirect:/user";
 
     }
+
+    @RequestMapping(value="/view/{taskId}", method = RequestMethod.GET)
+    public String viewTask(Model model, @PathVariable Long taskId) {
+
+        Task task = taskService.findById(taskId);
+        model.addAttribute("task", task);
+
+        return "views/task/view";
+    }
+
+
 }

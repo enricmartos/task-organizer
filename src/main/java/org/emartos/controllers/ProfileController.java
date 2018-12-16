@@ -7,10 +7,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.security.Principal;
 
 @Controller
+@RequestMapping("profile")
 public class ProfileController {
 
     @Autowired
@@ -20,7 +22,7 @@ public class ProfileController {
 
     //This functionality is only available when the user is logged in
     //we can know it using Principal class (spring security
-    @GetMapping("/profile")
+    @GetMapping("")
     public String showProfilePage(Model model, Principal principal) {
 
         String email = principal.getName();
@@ -28,6 +30,6 @@ public class ProfileController {
         User user = userService.findByEmail(email);
 
         model.addAttribute("tasks", taskService.findUserTask(user));
-        return "views/profile";
+        return "views/profile/index";
     }
 }

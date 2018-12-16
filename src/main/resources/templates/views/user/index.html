@@ -8,7 +8,7 @@
 <body>
 
 <div  layout:fragment="content" class="container mySpace">
-    <form action="/users" class="form-inline">
+    <form action="/user" class="form-inline">
         <div class="form-group mb-2">
             <input type="text" class="form-control" name="name" placeholder="Search User" />
             <input type="submit" value="Search"  class="btn btn-primary"/>
@@ -21,14 +21,14 @@
                     <tr>
                         <th>Name</th>
                         <th>Email</th>
-                        <th>Add</th>
+                        <!-- <th>Add</th> -->
                     </tr>
                 </thead>
                 <tbody>
                     <tr th:each="user:${users}">
                         <td th:text="${user.name}"></td>
                         <td th:text="${user.email}"></td>
-                        <td><a th:href="@{/addTask(email=${user.email})}" class="btn btn-dark">Add Task</a></td>
+                        <!-- <td><a th:href="@{task/addTask(email=${user.email})}" class="btn btn-dark">Add Task</a></td>-->
 
 
                         </td>

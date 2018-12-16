@@ -10,8 +10,9 @@
 <div  layout:fragment="content" class="container mySpace">
     <div class="card">
         <div class="card card-body">
-
-            <form th:action="@{/addProject}" th:object="${project}" method="post">
+            <!-- without / the path is not context relative-->
+            <!-- add -> the route for PostMapping -->
+            <form th:action="@{add}" th:object="${project}" method="post">
 
                 <div class="form-group">
                     <label for="name" class="form-control-label">Name</label>

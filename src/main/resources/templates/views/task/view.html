@@ -3,7 +3,7 @@
       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
       layout:decorate="~{fragments/main_layout}" >
 <head>
-    <title>Project Page</title>
+    <title>Task Page</title>
 </head>
 <body>
 
@@ -11,12 +11,12 @@
     <div class="card">
         <div class="card card-body">
             <ul>
-                <li th:each="project : ${projects}">
-                    <a th:text="${project.name}" th:href="'/project/view/' + ${project.id}"></a>
+                <li>
+                    <p th:text="${task.description}"></p>
                 </li>
             </ul>
 
-            <a href="/project/add">Add Project</a>
+
         </div>
     </div>
 </div>

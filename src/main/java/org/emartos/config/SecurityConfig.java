@@ -45,11 +45,11 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         // and resources (css & webjars) (non authentication needed) (get requests)
         //After the user is correctly logged in, he will se the profile page (post request of the log in form)
         //After the user is correctly logged out, he will se the log in page (get request)
-        http.authorizeRequests().antMatchers("/register", "/", "/about", "/login",
+        http.authorizeRequests().antMatchers("/signup", "/", "/about", "/login",
                 "/css/**", "/webjars/**").permitAll()
                 //.anyRequest().authenticated()
                 .antMatchers("/profile").hasAnyRole("USER,ADMIN")
-                .antMatchers("/users","/addTask").hasRole("ADMIN")
+                .antMatchers("/user","/task/**", "/project/**").hasRole("ADMIN")
                 .and().formLogin().loginPage("/login").permitAll().defaultSuccessUrl("/profile")
                 .and().logout().logoutSuccessUrl("/login");
     }
