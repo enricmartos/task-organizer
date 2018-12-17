@@ -16,6 +16,29 @@ public class UserService {
     @Autowired
     private UserRepository userRepository;
 
+    // READ
+
+    public List<User> findAll() {
+        return userRepository.findAll();
+    }
+
+    public User findById(Long id) {
+        Optional<User> optUser = userRepository.findById(id);
+        User user = optUser.get();
+        return user;
+    }
+
+    public List<User> findByName(String name) {
+        //this will match all the names that contain string name (sql query notation)
+        return  userRepository.findByNameLike("%"+name+"%");
+    }
+
+    public User findByEmail(String email) {
+        User user = userRepository.findByEmail(email);
+        return user;
+    }
+
+    //CREATE
     public void createUser(User user) {
         //Encoding the password in a hash
         BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
@@ -34,31 +57,10 @@ public class UserService {
         userRepository.save(user);
     }
 
-
-    public User findOne(Long id) {
-        Optional<User> optUser = userRepository.findById(id);
-        User user = optUser.get();
-        return user;
-    }
-
-    public User findByEmail(String email) {
-        User user = userRepository.findByEmail(email);
-        return user;
-    }
-
     public boolean isUserPresent(String email) {
         User user = userRepository.findByEmail(email);
         if (user!=null)
             return true;
         return false;
-    }
-
-    public List<User> findAll() {
-        return userRepository.findAll();
-    }
-
-    public List<User> findByName(String name) {
-        //this will match all the names that contain string name (sql query notation)
-        return  userRepository.findByNameLike("%"+name+"%");
     }
 }

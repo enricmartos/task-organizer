@@ -16,15 +16,7 @@ public class TaskService {
     @Autowired
     private TaskRepository taskRepository;
 
-    public void addTask(Task task, User user) {
-        task.setUser(user);
-        taskRepository.save(task);
-    }
-
-    public List<Task> findUserTask(User user) {
-        return taskRepository.findByUser(user);
-    }
-
+    // READ
     public List<Task> findAll() {
         return taskRepository.findAll();
     }
@@ -34,4 +26,19 @@ public class TaskService {
         Task task = optTask.get();
         return task;
     }
+
+    public List<Task> findByUser(User user) {
+        return taskRepository.findByUser(user);
+    }
+
+
+    // CREATE
+    public void createOne(Task task, User user) {
+        task.setUser(user);
+        taskRepository.save(task);
+    }
+
+
+
+
 }

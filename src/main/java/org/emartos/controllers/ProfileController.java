@@ -23,13 +23,13 @@ public class ProfileController {
     //This functionality is only available when the user is logged in
     //we can know it using Principal class (spring security
     @GetMapping("")
-    public String showProfilePage(Model model, Principal principal) {
+    public String showProfile(Model model, Principal principal) {
 
         String email = principal.getName();
 
         User user = userService.findByEmail(email);
 
-        model.addAttribute("tasks", taskService.findUserTask(user));
+        model.addAttribute("tasks", taskService.findByUser(user));
         return "views/profile/index";
     }
 }

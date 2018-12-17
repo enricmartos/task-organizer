@@ -20,7 +20,7 @@ public class SignupController {
     private UserService userService;
 
     @GetMapping("")
-    public String signupForm(Model model) {
+    public String showSignupForm(Model model) {
         model.addAttribute("user", new User());
         return "views/signup/index";
     }
@@ -28,7 +28,7 @@ public class SignupController {
     @PostMapping("")
     //Valid annotation to apply validation to the user set in the entity
     //Binding Result->bind exceptions to the view is the validation is not successful
-    public String signupUser(@Valid User user, BindingResult bindingResult, Model model) {
+    public String processSignupForm(@Valid User user, BindingResult bindingResult, Model model) {
         if(bindingResult.hasErrors()) {
             return "views/signup/index";
         }
@@ -38,9 +38,6 @@ public class SignupController {
         }
         userService.createUser(user);
         return "views/signup/success";
-
-
     }
-
 
 }

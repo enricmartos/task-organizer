@@ -24,18 +24,17 @@ public class TaskController {
     private TaskService taskService;
     @Autowired
     private UserService userService;
-
     @Autowired
     private ProjectService projectService;
 
     @GetMapping("")
-    public String index(Model model) {
+    public String showTasks(Model model) {
         model.addAttribute("tasks", taskService.findAll());
         return "views/task/index";
     }
 
     @GetMapping("add")
-    public String taskForm(String email, Model model, HttpSession session) {
+    public String showTaskForm(String email, Model model, HttpSession session) {
         //email of the user that with the task assigned
         session.setAttribute("email", email);
         model.addAttribute("task", new Task());
@@ -46,7 +45,7 @@ public class TaskController {
     }
 
     @PostMapping("add")
-    public String addTask(@Valid Task task, BindingResult bindingResult, @RequestParam Long projectId,
+    public String processTaskForm(@Valid Task task, BindingResult bindingResult, @RequestParam Long projectId,
                           @RequestParam Long userId) {
         if (bindingResult.hasErrors()) {
             return "views/task/add";
@@ -54,10 +53,10 @@ public class TaskController {
         Project project = projectService.findById(projectId);
         task.setProject(project);
 
-        taskService.addTask(task, userService.findOne(userId));
+        taskService.createOne(task, userService.findById(userId));
 
         //String email = (String)session.getAttribute("email");
-        //taskService.addTask(task, userService.findByEmail(email));
+        //taskService.createOne(task, userService.findByEmail(email));
 
         return "redirect:/user";
 

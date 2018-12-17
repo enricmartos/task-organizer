@@ -11,26 +11,9 @@
 
     <div class="card">
         <div class="card card-body">
-            <table class="table table-hover">
-                <thead>
-                    <tr>
-                        <th>Date</th>
-                        <th>Start time</th>
-                        <th>Stop time</th>
-                        <th>Description</th>
-                        <th>Project</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr th:each="task:${tasks}">
-                        <td th:text="${task.date}"></td>
-                        <td th:text="${task.startTime}"></td>
-                        <td th:text="${task.stopTime}"></td>
-                        <td th:text="${task.description}"></td>
-                        <td th:text="${task.project.name}"></td>
-                    </tr>
-                </tbody>
-            </table>
+
+            <table th:replace="@{fragments/taskList} :: taskList"></table>
+
         </div>
     </div>
 </div>

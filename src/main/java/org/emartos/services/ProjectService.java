@@ -15,6 +15,7 @@ public class ProjectService {
     @Autowired
     private ProjectRepository projectRepository;
 
+    // READ
     public List<Project> findAll() {
         return projectRepository.findAll();
     }
@@ -25,20 +26,13 @@ public class ProjectService {
         return project;
     }
 
+    public Project findByName(String name) {
+        return projectRepository.findByName(name);
+    }
+
+    // CREATE
     public void createOne(Project project) {
         //Encoding the password in a hash
         projectRepository.save(project);
-    }
-
-
-    public List<Task> findTasksById(Long id) {
-        Optional<Project> optProject = projectRepository.findById(id);
-        Project project = optProject.get();
-
-        return project.getTasks();
-    }
-
-    public Project findByName(String name) {
-        return projectRepository.findByName(name);
     }
 }

@@ -16,7 +16,7 @@ public class UserController {
     private UserService userService;
 
     @GetMapping("")
-    public String index(Model model, @RequestParam(defaultValue="")  String name) {
+    public String showUsers(Model model, @RequestParam(defaultValue="")  String name) {
         model.addAttribute("users", userService.findByName(name));
         return "views/user/index";
     }

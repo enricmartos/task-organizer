@@ -58,7 +58,7 @@ public class TaskOrganizerApplicationTests {
             User user = userService.findByEmail("testUser@mail.com");
             Project project = projectService.findByName("Development");
             userTask.setProject(project);
-            taskService.addTask(userTask, user);
+            taskService.createOne(userTask, user);
     }
 
 

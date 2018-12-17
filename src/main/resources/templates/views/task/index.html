@@ -10,11 +10,8 @@
 <div  layout:fragment="content" class="container mySpace">
     <div class="card">
         <div class="card card-body">
-            <ul>
-                <li th:each="task : ${tasks}">
-                    <a th:text="${task.description}" th:href="'/task/view/' + ${task.id}"></a>
-                </li>
-            </ul>
+
+            <table th:replace="@{fragments/taskList} :: taskList"></table>
 
             <a href="/task/add">Add Task</a>
 
