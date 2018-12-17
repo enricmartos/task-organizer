@@ -3,6 +3,7 @@ package org.emartos;
 import org.emartos.entities.Project;
 import org.emartos.entities.Task;
 import org.emartos.entities.User;
+import org.emartos.services.ProjectService;
 import org.emartos.services.TaskService;
 import org.emartos.services.UserService;
 import org.junit.Before;
@@ -30,6 +31,9 @@ public class TaskOrganizerApplicationTests {
     @Autowired
     private TaskService taskService;
 
+    @Autowired
+    private ProjectService projectService;
+
     //Before executing any test, this method will be executed
     @Before
     public void initDb() {
@@ -44,12 +48,16 @@ public class TaskOrganizerApplicationTests {
                     "testAdmin", "123456");
             userService.createAdmin(newUser);
         }
+        {
+            Project project = new Project("Development");
+            projectService.createOne(project);
+        }
 
             Task userTask = new Task("03/01/2018", "00:11",
                     "11:00", "You need to work today");
-            Project project = new Project("Development");
-            userTask.setProject(project);
             User user = userService.findByEmail("testUser@mail.com");
+            Project project = projectService.findByName("Development");
+            userTask.setProject(project);
             taskService.addTask(userTask, user);
     }
 

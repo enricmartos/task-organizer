@@ -37,4 +37,8 @@ public class ProjectService {
 
         return project.getTasks();
     }
+
+    public Project findByName(String name) {
+        return projectRepository.findByName(name);
+    }
 }
