@@ -71,5 +71,12 @@ public class TaskController {
         return "views/task/view";
     }
 
+    @RequestMapping(value="/delete/{taskId}", method = RequestMethod.GET)
+    public String deleteTask(@PathVariable Long taskId) {
+        taskService.deleteOne(taskId);
+
+        return "redirect:/task";
+    }
+
 
 }

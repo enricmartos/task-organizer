@@ -11,7 +11,8 @@
     <div class="card">
         <div class="card card-body">
 
-            <table th:replace="@{fragments/taskList} :: taskList"></table>
+            <table th:insert="@{fragments/taskList} :: taskList">
+            </table>
 
             <a href="/task/add">Add Task</a>
 
