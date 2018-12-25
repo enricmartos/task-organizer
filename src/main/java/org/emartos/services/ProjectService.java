@@ -6,6 +6,7 @@ import org.emartos.repositories.ProjectRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -17,13 +18,16 @@ public class ProjectService {
 
     // READ
     public List<Project> findAll() {
-        return projectRepository.findAll();
+        List<Project> projects = new ArrayList<Project>();
+
+        for (Project project: projectRepository.findAll()) {
+            projects.add(project);
+        }
+        return projects;
     }
 
     public Project findById(Long id) {
-        Optional<Project> optProject = projectRepository.findById(id);
-        Project project = optProject.get();
-        return project;
+        return projectRepository.findById(id).get();
     }
 
     public Project findByName(String name) {

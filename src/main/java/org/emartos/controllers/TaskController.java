@@ -40,7 +40,7 @@ public class TaskController {
         model.addAttribute("task", new Task());
         model.addAttribute("projects", projectService.findAll());
         model.addAttribute("users", userService.findAll());
-        //return "views/taskForm";
+
         return "views/task/add";
     }
 
@@ -50,10 +50,10 @@ public class TaskController {
         if (bindingResult.hasErrors()) {
             return "views/task/add";
         }
-        Project project = projectService.findById(projectId);
-        task.setProject(project);
+        task.setProject(projectService.findById(projectId));
+        task.setUser(userService.findById(userId));
 
-        taskService.createOne(task, userService.findById(userId));
+        taskService.createOne(task);
 
         //String email = (String)session.getAttribute("email");
         //taskService.createOne(task, userService.findByEmail(email));
@@ -76,6 +76,16 @@ public class TaskController {
         taskService.deleteOne(taskId);
 
         return "redirect:/task";
+    }
+
+    @RequestMapping(value="/{taskId}", method = RequestMethod.GET)
+    public String updateTask(@PathVariable Long taskId, Model model) {
+        Task task = taskService.findById(taskId);
+        model.addAttribute("task", task);
+        model.addAttribute("projects", task.getProject());
+        model.addAttribute("users", task.getUser());
+
+        return "views/task/add";
     }
 
 

@@ -53,12 +53,12 @@ public class TaskOrganizerApplicationTests {
             projectService.createOne(project);
         }
 
-            Task userTask = new Task("03/01/2018", "00:11",
+            Task userTask = new Task("03-01-2018", "00:11",
                     "11:00", "You need to work today");
             User user = userService.findByEmail("testUser@mail.com");
-            Project project = projectService.findByName("Development");
-            userTask.setProject(project);
-            taskService.createOne(userTask, user);
+            userTask.setProject(projectService.findByName("Development"));
+            userTask.setUser(user);
+            taskService.createOne(userTask);
     }
 
 

@@ -9,6 +9,7 @@
         <th>Stop time</th>
         <th>Description</th>
         <th>Project</th>
+        <th sec:authorize="hasRole('ROLE_ADMIN')">Edit</th>
         <th sec:authorize="hasRole('ROLE_ADMIN')">Delete</th>
     </tr>
     </thead>
@@ -19,6 +20,7 @@
         <td th:text="${task.stopTime}"></td>
         <td th:text="${task.description}"></td>
         <td th:text="${task.project.name}"></td>
+        <td sec:authorize="hasRole('ROLE_ADMIN')"><a th:text="Edit" th:href="'/task/' + ${task.id}"></a></td>
         <td sec:authorize="hasRole('ROLE_ADMIN')"><a th:text="Delete" th:href="'/task/delete/' + ${task.id}"></a></td>
     </tr>
     </tbody>
