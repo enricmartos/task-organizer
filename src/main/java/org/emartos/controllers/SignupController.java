@@ -36,7 +36,7 @@ public class SignupController {
             model.addAttribute("exist", true);
             return "views/signup/index";
         }
-        userService.createUser(user);
+        userService.saveOne(user);
         return "views/signup/success";
     }
 

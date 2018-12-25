@@ -37,7 +37,7 @@ public class TaskService {
 
 
     // CREATE
-    public void createOne(Task task) {
+    public void saveOne(Task task) {
         taskRepository.save(task);
     }
 

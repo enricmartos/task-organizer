@@ -43,7 +43,7 @@ public class ProjectController {
         if (bindingResult.hasErrors()) {
             return "views/project/add";
         }
-        projectService.createOne(project);
+        projectService.saveOne(project);
         return "redirect:/project";
     }
 

@@ -41,7 +41,7 @@ public class TaskOrganizerApplicationTests {
         {
             User newUser = new User("testUser@mail.com",
                     "testUser", "123456");
-            userService.createUser(newUser);
+            userService.saveOne(newUser);
         }
         {
             User newUser = new User("testAdmin@mail.com",
@@ -50,7 +50,7 @@ public class TaskOrganizerApplicationTests {
         }
         {
             Project project = new Project("Development");
-            projectService.createOne(project);
+            projectService.saveOne(project);
         }
 
             Task userTask = new Task("03-01-2018", "00:11",
@@ -58,7 +58,7 @@ public class TaskOrganizerApplicationTests {
             User user = userService.findByEmail("testUser@mail.com");
             userTask.setProject(projectService.findByName("Development"));
             userTask.setUser(user);
-            taskService.createOne(userTask);
+            taskService.saveOne(userTask);
     }
 
 

@@ -53,7 +53,7 @@ public class TaskController {
         task.setProject(projectService.findById(projectId));
         task.setUser(userService.findById(userId));
 
-        taskService.createOne(task);
+        taskService.saveOne(task);
 
         //String email = (String)session.getAttribute("email");
         //taskService.createOne(task, userService.findByEmail(email));

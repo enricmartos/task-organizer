@@ -44,7 +44,7 @@ public class UserService {
     }
 
     //CREATE
-    public void createUser(User user) {
+    public void saveOne(User user) {
         //Encoding the password in a hash
         BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
         user.setPassword(encoder.encode(user.getPassword()));
