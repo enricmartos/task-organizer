@@ -50,6 +50,7 @@ public class TaskController {
         if (bindingResult.hasErrors()) {
             return "views/task/add";
         }
+
         task.setProject(projectService.findById(projectId));
         task.setUser(userService.findById(userId));
 
@@ -58,7 +59,7 @@ public class TaskController {
         //String email = (String)session.getAttribute("email");
         //taskService.createOne(task, userService.findByEmail(email));
 
-        return "redirect:/user";
+        return "redirect:/task";
 
     }
 
@@ -82,8 +83,9 @@ public class TaskController {
     public String updateTask(@PathVariable Long taskId, Model model) {
         Task task = taskService.findById(taskId);
         model.addAttribute("task", task);
-        model.addAttribute("projects", task.getProject());
-        model.addAttribute("users", task.getUser());
+        model.addAttribute("projects", projectService.findAll());
+        model.addAttribute("users", userService.findAll());
+        model.addAttribute("mode", "edit");
 
         return "views/task/add";
     }

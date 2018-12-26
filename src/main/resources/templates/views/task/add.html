@@ -44,7 +44,9 @@
                     <select name="projectId">
                         <option th:each="project: ${projects}"
                                 th:text="${project.name}"
-                                th:value="${project.id}"></option>
+                                th:value="${project.id}"
+                                th:selected =" *{id}? ${project.name} == *{project.name}"
+                                ></option>
                     </select>
                 </div>
 
@@ -53,7 +55,9 @@
                     <select name="userId">
                         <option th:each="user: ${users}"
                                 th:text="${user.name}"
-                                th:value="${user.id}"></option>
+                                th:value="${user.id}"
+                                th:selected =" *{id}? ${user.name} == *{user.name}"
+                                ></option>
                     </select>
                 </div>
 
