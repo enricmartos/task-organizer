@@ -5,10 +5,10 @@ services:
       context: ${PWD}
       dockerfile: Dockerfile
     environment:
-      - DISPLAY_ERRORS=On
-      - MYSQL_HOST=mysql
-      - MYSQL_USER=root
-      - MYSQL_PASSWORD=root
+      - DISPLAY_ERRORS
+      - MYSQL_HOST
+      - MYSQL_USER
+      - MYSQL_PASSWORD
     ports:
       - 8086:8086
     networks:
@@ -27,9 +27,17 @@ services:
       - admin
       - torganizer-network
 
+  adminer:
+    image: adminer
+    ports:
+      - 8080:8080
+    networks:
+      - admin
+    depends_on:
+      - mysql
+
 networks:
     torganizer-network:
-    external:
       name: torganizer-network
     application:
     admin:
