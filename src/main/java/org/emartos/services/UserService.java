@@ -49,16 +49,6 @@ public class UserService {
         BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
         user.setPassword(encoder.encode(user.getPassword()));
         //Create and set role
-        user.setRole("USER");
-        userRepository.save(user);
-    }
-
-    public void createAdmin(User user) {
-        //Encoding the password in a hash
-        BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
-        user.setPassword(encoder.encode(user.getPassword()));
-        //Create and set role
-        user.setRole("ADMIN");
         userRepository.save(user);
     }
 
