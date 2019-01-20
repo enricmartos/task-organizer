@@ -14,11 +14,11 @@ and Many-to-One relationships
 - To start using Spring Security in order to perform common user management operations such as Sign up, Log in and Role definition
 - To implement unit tests by using JUnit
 
-## Core technologies
+## Stack
 
 *Front-end*
 - Thymeleaf
-- Bootswatch (as a layer on top of Bootstrap)
+- Bootwatch (as a layer on top of Bootstrap)
 
 *Back-end*
 - Spring Boot
@@ -33,10 +33,34 @@ and Many-to-One relationships
 *Dependency management tool*
 - Gradle
 
-*IDE*
-- IntelliJ IDEA
+*Containerization*
+- Docker-compose
 
 ## Build setup
+
+### With Docker
+
+- Clone this repo to your local machine.
+```
+# Start docker-compose
+
+$ docker-compose up
+```
+
+This command creates the three docker containers detailed below:
+
+- _task-organizer_app_1_: Main container of the Spring Boot application
+
+- _task-organizer_mysql_1_: DB container
+
+- _task-organizer_adminer_1_: DB management tool to interact with the MySQL DB
+
+Adminer's credentials are the ones defined in .env file.
+
+- Open your browser and test the application on *localhost:8086*
+
+
+### Without Docker
 
 - Clone this repo to your local machine. If you use IntelliJ as IDE, open this project there.
 
