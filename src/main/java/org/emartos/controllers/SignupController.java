@@ -39,12 +39,15 @@ public class SignupController {
 //    public String processSignupForm(@Valid User user, @RequestParam String roleName, BindingResult bindingResult, Model model) {
     public String processSignupForm(@ModelAttribute @Valid User user, Errors errors, Model model, @RequestParam String roleName) {
         if(errors.hasErrors()) {
-            roles.add("USER");
-            roles.add("ADMIN");
+//            roles.add("USER");
+//            roles.add("ADMIN");
             model.addAttribute("roles", roles);
             return "views/signup/index";
         }
-        if(userService.isUserPresent(user.getEmail())) {
+        else if(userService.isUserPresent(user.getEmail())) {
+//            roles.add("USER");
+//            roles.add("ADMIN");
+            model.addAttribute("roles", roles);
             model.addAttribute("exist", true);
             return "views/signup/index";
         }

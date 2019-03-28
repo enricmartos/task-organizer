@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
+import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpSession;
@@ -34,9 +35,10 @@ public class TaskController {
     }
 
     @GetMapping("add")
-    public String showTaskForm(String email, Model model, HttpSession session) {
+//    public String showTaskForm(String email, Model model, HttpSession session) {
+    public String showTaskForm(Model model) {
         //email of the user that with the task assigned
-        session.setAttribute("email", email);
+//        session.setAttribute("email", email);
         model.addAttribute("task", new Task());
         model.addAttribute("projects", projectService.findAll());
         model.addAttribute("users", userService.findAll());
@@ -45,9 +47,11 @@ public class TaskController {
     }
 
     @PostMapping("add")
-    public String processTaskForm(@Valid Task task, BindingResult bindingResult, @RequestParam Long projectId,
-                          @RequestParam Long userId) {
-        if (bindingResult.hasErrors()) {
+    public String processTaskForm(@ModelAttribute @Valid Task task, Errors errors, Model model,
+                                  @RequestParam Long projectId, @RequestParam Long userId) {
+        if (errors.hasErrors()) {
+            model.addAttribute("projects", projectService.findAll());
+            model.addAttribute("users", userService.findAll());
             return "views/task/add";
         }
 
