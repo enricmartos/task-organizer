@@ -12,12 +12,14 @@ import org.springframework.web.bind.annotation.RequestParam;
 @RequestMapping("user")
 public class UserController {
 
+    private static final String INDEX_USER_PAGE = "views/user/index";
+
     @Autowired
     private UserService userService;
 
     @GetMapping("")
     public String showUsers(Model model, @RequestParam(defaultValue="")  String name) {
         model.addAttribute("users", userService.findByName(name));
-        return "views/user/index";
+        return INDEX_USER_PAGE;
     }
 }

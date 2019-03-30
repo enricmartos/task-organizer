@@ -11,7 +11,7 @@
     <div class="card">
         <div class="card card-body">
 
-            <form method="post" th:object="${task}" th:action=" @{add} ">
+            <form method="post" th:object="${task}" th:action=" @{new} ">
                 <!-- mandatory field in order to send to add post method the id of the already existing task
                 thanks to this, we can update tasks without duplicating them-->
                 <input type="hidden" th:field="*{id}"/>

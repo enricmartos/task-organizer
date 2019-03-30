@@ -15,6 +15,8 @@ import java.security.Principal;
 @RequestMapping("profile")
 public class ProfileController {
 
+    private static final String INDEX_PROFILE_PAGE = "views/profile/index";
+
     @Autowired
     private TaskService taskService;
     @Autowired
@@ -30,6 +32,6 @@ public class ProfileController {
         User user = userService.findByEmail(email);
 
         model.addAttribute("tasks", taskService.findByUser(user));
-        return "views/profile/index";
+        return INDEX_PROFILE_PAGE;
     }
 }

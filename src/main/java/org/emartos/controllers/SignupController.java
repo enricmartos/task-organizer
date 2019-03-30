@@ -17,6 +17,9 @@ import java.util.List;
 @RequestMapping("signup")
 public class SignupController {
 
+    private static final String INDEX_SIGNUP_PAGE = "views/signup/index";
+    private static final String SUCCESS_SIGNUP_PAGE = "views/signup/index";
+
     @Autowired
     private UserService userService;
 
@@ -30,7 +33,7 @@ public class SignupController {
         roles.add("ADMIN");
         model.addAttribute("user", new User());
         model.addAttribute("roles", roles);
-        return "views/signup/index";
+        return INDEX_SIGNUP_PAGE;
     }
 
     @PostMapping("")
@@ -42,18 +45,18 @@ public class SignupController {
 //            roles.add("USER");
 //            roles.add("ADMIN");
             model.addAttribute("roles", roles);
-            return "views/signup/index";
+            return INDEX_SIGNUP_PAGE;
         }
         else if(userService.isUserPresent(user.getEmail())) {
 //            roles.add("USER");
 //            roles.add("ADMIN");
             model.addAttribute("roles", roles);
             model.addAttribute("exist", true);
-            return "views/signup/index";
+            return INDEX_SIGNUP_PAGE;
         }
         user.setRole(roleName);
         userService.saveOne(user);
-        return "views/signup/success";
+        return SUCCESS_SIGNUP_PAGE ;
     }
 
 }

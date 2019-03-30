@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{fragments/main_layout}" >
+<head>
+    <title>Project Page</title>
+</head>
+<body>
+
+<div layout:fragment="content" class="container mySpace">
+    <div class="card">
+        <div class="card card-body">
+
+            <form method="post" th:object="${task}" th:action=" @{new} ">
+                <!-- mandatory field in order to send to add post method the id of the already existing task
+                thanks to this, we can update tasks without duplicating them-->
+                <input type="hidden" th:field="*{id}"/>
+                <div class="form-group">
+                    <label th:for="date">Date</label>
+                    <input type="date" class="form-control" th:field="*{date}"/>
+                    <!--<div class="text text-danger" th:if="${#fields.hasErrors('date')}" th:errors="*{date}"></div>-->
+                    <span th:errors="*{date}" class="errors"></span>
+                </div>
+
+                <div class="form-group">
+                    <label th:for="startTime">StartTime</label>
+                    <input type="time" class="form-control" th:field="*{startTime}"/>
+                    <span th:errors="*{startTime}" class="errors"></span>
+                    <!--<div class="text text-danger" th:if="${#fields.hasErrors('startTime')}" th:errors="*{startTime}"></div>-->
+                </div>
+
+                <div class="form-group">
+                    <label th:for="stopTime">StopTime</label>
+                    <input type="time" class="form-control" th:field="*{stopTime}"/>
+                    <span th:errors="*{stopTime}" class="errors"></span>
+                    <!--<div class="text text-danger" th:if="${#fields.hasErrors('stopTime')}" th:errors="*{stopTime}"></div>-->
+                </div>
+
+                <div class="form-group">
+                    <label th:for="description">Description</label>
+                    <textarea class="form-control" th:field="*{description}"></textarea>
+                    <span th:errors="*{description}" class="errors"></span>
+                    <!--<div class="text text-danger" th:if="${#fields.hasErrors('description')}" th:errors="*{description}"></div>-->
+                </div>
+
+                <div class="form-group">
+                    <label th:for="project">Project</label>
+                    <select name="projectId">
+                        <option th:each="project: ${projects}"
+                                th:text="${project.name}"
+                                th:value="${project.id}"
+                                th:selected =" *{id}? ${project.name} == *{project.name}"
+                        ></option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label th:for="user">Assignee</label>
+                    <select name="userId">
+                        <option th:each="user: ${users}"
+                                th:text="${user.name}"
+                                th:value="${user.id}"
+                                th:selected =" *{id}? ${user.name} == *{user.name}"
+                        ></option>
+                    </select>
+                </div>
+
+                <input type="submit" value="Submit" class="btn btn-primary"/>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

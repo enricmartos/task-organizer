@@ -21,6 +21,12 @@ import java.util.Optional;
 @RequestMapping("task")
 public class TaskController {
 
+    private static final String INDEX_TASK_PAGE = "views/task/index";
+    private static final String NEW_TASK_PAGE = "views/task/new";
+    private static final String REDIRECT_TASK_PAGE = "redirect:/task";
+    private static final String VIEW_TASK_PAGE = "views/task/view";
+//    private static final String EDIT_TASK_PAGE = "views/task/edit";
+
     @Autowired
     private TaskService taskService;
     @Autowired
@@ -31,10 +37,10 @@ public class TaskController {
     @GetMapping("")
     public String showTasks(Model model) {
         model.addAttribute("tasks", taskService.findAll());
-        return "views/task/index";
+        return INDEX_TASK_PAGE;
     }
 
-    @GetMapping("add")
+    @GetMapping("new")
 //    public String showTaskForm(String email, Model model, HttpSession session) {
     public String showTaskForm(Model model) {
         //email of the user that with the task assigned
@@ -43,16 +49,16 @@ public class TaskController {
         model.addAttribute("projects", projectService.findAll());
         model.addAttribute("users", userService.findAll());
 
-        return "views/task/add";
+        return NEW_TASK_PAGE;
     }
 
-    @PostMapping("add")
+    @PostMapping("new")
     public String processTaskForm(@ModelAttribute @Valid Task task, Errors errors, Model model,
                                   @RequestParam Long projectId, @RequestParam Long userId) {
         if (errors.hasErrors()) {
             model.addAttribute("projects", projectService.findAll());
             model.addAttribute("users", userService.findAll());
-            return "views/task/add";
+            return NEW_TASK_PAGE;
         }
 
         task.setProject(projectService.findById(projectId));
@@ -63,7 +69,7 @@ public class TaskController {
         //String email = (String)session.getAttribute("email");
         //taskService.createOne(task, userService.findByEmail(email));
 
-        return "redirect:/task";
+        return REDIRECT_TASK_PAGE;
 
     }
 
@@ -73,14 +79,14 @@ public class TaskController {
         Task task = taskService.findById(taskId);
         model.addAttribute("task", task);
 
-        return "views/task/view";
+        return VIEW_TASK_PAGE;
     }
 
     @RequestMapping(value="/delete/{taskId}", method = RequestMethod.GET)
     public String deleteTask(@PathVariable Long taskId) {
         taskService.deleteOne(taskId);
 
-        return "redirect:/task";
+        return REDIRECT_TASK_PAGE;
     }
 
     @RequestMapping(value="/{taskId}", method = RequestMethod.GET)
@@ -91,7 +97,16 @@ public class TaskController {
         model.addAttribute("users", userService.findAll());
         model.addAttribute("mode", "edit");
 
-        return "views/task/add";
+        return NEW_TASK_PAGE;
+    }
+
+    @RequestMapping(value="/{taskId}/edit", method = RequestMethod.GET)
+    public String editTask(@PathVariable Long taskId, Model model) {
+        Task task = taskService.findById(taskId);
+        model.addAttribute(task);
+        model.addAttribute("projects", projectService.findAll());
+        model.addAttribute("users", userService.findAll());
+        return NEW_TASK_PAGE;
     }
 
 
