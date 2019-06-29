@@ -25,7 +25,7 @@ public class TaskController {
     private static final String NEW_TASK_PAGE = "views/task/new";
     private static final String REDIRECT_TASK_PAGE = "redirect:/task";
     private static final String VIEW_TASK_PAGE = "views/task/view";
-//    private static final String EDIT_TASK_PAGE = "views/task/edit";
+    private static final String EDIT_TASK_PAGE = "views/task/edit";
 
     @Autowired
     private TaskService taskService;
@@ -66,9 +66,6 @@ public class TaskController {
 
         taskService.saveOne(task);
 
-        //String email = (String)session.getAttribute("email");
-        //taskService.createOne(task, userService.findByEmail(email));
-
         return REDIRECT_TASK_PAGE;
 
     }
@@ -89,24 +86,33 @@ public class TaskController {
         return REDIRECT_TASK_PAGE;
     }
 
-    @RequestMapping(value="/{taskId}", method = RequestMethod.GET)
-    public String updateTask(@PathVariable Long taskId, Model model) {
-        Task task = taskService.findById(taskId);
+    @GetMapping(value="/{id}/edit")
+    public String edit(@PathVariable("id") Long id, Model model) {
+        Task task = taskService.findById(id);
         model.addAttribute("task", task);
         model.addAttribute("projects", projectService.findAll());
         model.addAttribute("users", userService.findAll());
-        model.addAttribute("mode", "edit");
+//        model.addAttribute("mode", "edit");
 
-        return NEW_TASK_PAGE;
+        return EDIT_TASK_PAGE;
     }
 
-    @RequestMapping(value="/{taskId}/edit", method = RequestMethod.GET)
-    public String editTask(@PathVariable Long taskId, Model model) {
-        Task task = taskService.findById(taskId);
-        model.addAttribute(task);
-        model.addAttribute("projects", projectService.findAll());
-        model.addAttribute("users", userService.findAll());
-        return NEW_TASK_PAGE;
+    @PostMapping(value="/{id}/edit")
+    public String editTask(@PathVariable("id") Long id, @ModelAttribute @Valid Task task, Errors errors,
+                           Model model, @RequestParam Long projectId, @RequestParam Long userId) {
+        if (errors.hasErrors()) {
+            task.setId(id);
+            model.addAttribute("projects", projectService.findAll());
+            model.addAttribute("users", userService.findAll());
+            return EDIT_TASK_PAGE;
+        }
+
+        task.setProject(projectService.findById(projectId));
+        task.setUser(userService.findById(userId));
+
+        taskService.saveOne(task);
+
+        return REDIRECT_TASK_PAGE;
     }
 
 

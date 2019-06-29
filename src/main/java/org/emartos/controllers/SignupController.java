@@ -18,7 +18,7 @@ import java.util.List;
 public class SignupController {
 
     private static final String INDEX_SIGNUP_PAGE = "views/signup/index";
-    private static final String SUCCESS_SIGNUP_PAGE = "views/signup/index";
+    private static final String SUCCESS_SIGNUP_PAGE = "views/signup/success";
 
     @Autowired
     private UserService userService;
