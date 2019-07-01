@@ -92,7 +92,6 @@ public class TaskController {
         model.addAttribute("task", task);
         model.addAttribute("projects", projectService.findAll());
         model.addAttribute("users", userService.findAll());
-//        model.addAttribute("mode", "edit");
 
         return EDIT_TASK_PAGE;
     }
@@ -100,15 +99,15 @@ public class TaskController {
     @PostMapping(value="/{id}/edit")
     public String editTask(@PathVariable("id") Long id, @ModelAttribute @Valid Task task, Errors errors,
                            Model model, @RequestParam Long projectId, @RequestParam Long userId) {
+        //set the values to related entities of binding object task
+        task.setProject(projectService.findById(projectId));
+        task.setUser(userService.findById(userId));
+
         if (errors.hasErrors()) {
-            task.setId(id);
             model.addAttribute("projects", projectService.findAll());
             model.addAttribute("users", userService.findAll());
             return EDIT_TASK_PAGE;
         }
-
-        task.setProject(projectService.findById(projectId));
-        task.setUser(userService.findById(userId));
 
         taskService.saveOne(task);
 
