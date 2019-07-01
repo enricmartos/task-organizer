@@ -29,6 +29,8 @@ public class SignupController {
 
     @GetMapping("")
     public String showSignupForm(Model model) {
+        //Clear the list first in order to avoid duplicates in every GET request
+        roles.clear();
         roles.add("USER");
         roles.add("ADMIN");
         model.addAttribute("user", new User());
