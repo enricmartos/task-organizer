@@ -70,18 +70,18 @@ public class TaskController {
 
     }
 
-    @RequestMapping(value="/view/{taskId}", method = RequestMethod.GET)
-    public String viewTask(Model model, @PathVariable Long taskId) {
+    @RequestMapping(value="/view/{id}", method = RequestMethod.GET)
+    public String showTask(Model model, @PathVariable Long id) {
 
-        Task task = taskService.findById(taskId);
+        Task task = taskService.findById(id);
         model.addAttribute("task", task);
 
         return VIEW_TASK_PAGE;
     }
 
-    @RequestMapping(value="/delete/{taskId}", method = RequestMethod.GET)
-    public String deleteTask(@PathVariable Long taskId) {
-        taskService.deleteOne(taskId);
+    @RequestMapping(value="/delete/{id}", method = RequestMethod.GET)
+    public String deleteTask(@PathVariable Long id) {
+        taskService.deleteOne(id);
 
         return REDIRECT_TASK_PAGE;
     }

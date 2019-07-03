@@ -20,7 +20,7 @@ import java.util.List;
 public class ProjectController {
 
     private static final String INDEX_PROJECT_PAGE = "views/project/index";
-    private static final String ADD_PROJECT_PAGE = "views/project/add";
+    private static final String NEW_PROJECT_PAGE = "views/project/new";
     private static final String REDIRECT_PROJECT_PAGE = "redirect:/project";
     private static final String INDEX_TASK_PAGE = "views/task/index";
 
@@ -36,26 +36,26 @@ public class ProjectController {
         return INDEX_PROJECT_PAGE;
     }
 
-    @GetMapping("add")
+    @GetMapping("new")
     public String showProjectForm(Model model) {
 
         model.addAttribute("project", new Project());
-        return ADD_PROJECT_PAGE;
+        return NEW_PROJECT_PAGE;
     }
 
-    @PostMapping("add")
+    @PostMapping("new")
     public String processProjectForm(@Valid Project project, BindingResult bindingResult, HttpSession session) {
         if (bindingResult.hasErrors()) {
-            return ADD_PROJECT_PAGE;
+            return NEW_PROJECT_PAGE;
         }
         projectService.saveOne(project);
         return REDIRECT_PROJECT_PAGE ;
     }
 
-    @RequestMapping(value="view/{projectId}", method = RequestMethod.GET)
-    public String showProject(Model model, @PathVariable Long projectId) {
+    @RequestMapping(value="view/{id}", method = RequestMethod.GET)
+    public String showProject(Model model, @PathVariable Long id) {
 
-        Project project = projectService.findById(projectId);
+        Project project = projectService.findById(id);
         List<Task> tasks = project.getTasks();
         model.addAttribute("tasks", tasks);
 
