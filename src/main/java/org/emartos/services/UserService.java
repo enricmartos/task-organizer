@@ -48,14 +48,10 @@ public class UserService {
         //Encoding the password in a hash
         BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
         user.setPassword(encoder.encode(user.getPassword()));
-        //Create and set role
         userRepository.save(user);
     }
 
     public boolean isUserPresent(String email) {
-        User user = userRepository.findByEmail(email);
-        if (user!=null)
-            return true;
-        return false;
+        return userRepository.findByEmail(email) != null;
     }
 }

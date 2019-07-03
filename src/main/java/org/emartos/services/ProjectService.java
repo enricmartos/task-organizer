@@ -36,7 +36,6 @@ public class ProjectService {
 
     // CREATE
     public void saveOne(Project project) {
-        //Encoding the password in a hash
         projectRepository.save(project);
     }
 }
